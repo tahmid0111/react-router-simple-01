@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import './App.css'
+import ActiveLink from './Components/ActiveLink'
 
 
 function App() {
@@ -8,9 +9,9 @@ function App() {
   return (
     <>
       <h1>This is Home Page</h1>
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/products'>Products</Link>
+      <ActiveLink to='/'>Home</ActiveLink>
+      <ActiveLink to='/about'>About</ActiveLink>
+      <ActiveLink to='/products'>Products</ActiveLink>
       <Outlet />
     </>
   )
