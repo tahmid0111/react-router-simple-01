@@ -5,3 +5,11 @@
 .active{
     color: red;
 }
+.single_nav{
+    font-size: 20px;
+    padding: 0 15px;
+    transition: .5s;
+}
+.single_nav:hover{
+    color: red;
+}
