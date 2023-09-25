@@ -5,10 +5,12 @@ const Product = (props) => {
   const {id, title, price, description} = props.product
   return (
     <>
-      <h3>{id}</h3>
-      <h1>{title}</h1>
-      <h4>{description}</h4>
-      <Link to={`/product/${id}`}>show details</Link>
+      <div className="single_product p-10 mx-10 my-20 border border-red-900">
+        <h1 className='text-yellow-600 text-2xl pb-10'>{title}</h1>
+        <h2>{price} $</h2>
+        <h4>{description}</h4>
+        <Link to={`/product/${id}`} className='text-2xl'>show details</Link>
+      </div>
     </>
   )
 }
