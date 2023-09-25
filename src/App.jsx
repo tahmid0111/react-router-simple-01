@@ -8,11 +8,15 @@ function App() {
 
   return (
     <>
-      <h1>This is Home Page</h1>
-      <ActiveLink to='/'>Home</ActiveLink>
-      <ActiveLink to='/about'>About</ActiveLink>
-      <ActiveLink to='/products'>Products</ActiveLink>
-      <Outlet />
+      <div className='container mx-auto text-center py-20'>
+        <h1 className='text-5xl text-red-600'>This is Home Page</h1>
+        <nav className='py-10'>
+          <ActiveLink to='/'>Home</ActiveLink>
+          <ActiveLink to='/about'>About</ActiveLink>
+          <ActiveLink to='/products'>Products</ActiveLink>
+        </nav>
+        <Outlet />
+      </div>
     </>
   )
 }
